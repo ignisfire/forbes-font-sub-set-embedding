@@ -103,10 +103,10 @@
 <body>
 <h1>Font sub-setting to avert CLS for forbes.com article headings</h1>
 <section>
-	The technique strips non-essential characters and functionality from a font file, leaving only those needed to
+	The technique strips non-essential characters and functionality from a font file into a sub-set, leaving only those needed to
 	display a normal forbes.com article title, and embedding the resulting font file inline in the CSS as base64 encoded
-	string. Stripping reduces the size by at least 50%. For our pages this will increase the page
-	size by 15kb (20kb un-compressed). This demo is best viewed in full-screen, and the external
+	string. Stripping reduces the size by at least 40%. When we embed this in our HTML, this will increase the page
+	size by 14kb (20kb un-compressed). This demo is best viewed in full-screen, and the external
 	font loading is intentionally delayed by 2 seconds to mimic a slow internet connection.
 </section>
 <div class="row">
@@ -142,7 +142,7 @@
 	</div>
 </div>
 <section>
-	<p>I believe we can reduce the estimated 15kb even further with proper tooling and more careful sub-setting - for
+	<p>I believe we can reduce the estimated 14kb even further with proper tooling and more careful sub-setting - for
 		this example I used the configuration below when making a sub-set. In addition, we could employ some smart logic
 		and a proxy in front of our caching servers - when we have a returning customer that is expected to have already
 		loaded the fonts and have them cached, we can remove the embedded font from the html.</p>
